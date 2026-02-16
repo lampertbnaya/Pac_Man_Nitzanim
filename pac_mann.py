@@ -3,7 +3,14 @@ import arcade
 from arcade.examples.drawing_primitives import texture
 from pymunk.examples.colors import color
 
+
+SCREEN_WIDTH = 900
+SCREEN_HEIGHT = 600
+SCREEN_TITLE = "Pac-Man (Arcade)"
+
 TILE_SIZE = 32
+MOVE_COOLDOWN = 0.16
+
 
 class Coin(arcade.Sprite):
     def __init__(self,center_x,center_y):
