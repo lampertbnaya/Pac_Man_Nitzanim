@@ -4,7 +4,7 @@ from arcade.examples.drawing_primitives import texture
 from pymunk.examples.colors import color
 
 
-SCREEN_WIDTH = 900
+SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Pac-Man (Arcade)"
 
@@ -63,10 +63,12 @@ class Enemy(Character):
         self.center_y += self.change_y*self.speed
 
 
-class Wall:
-    def __init__(self, center_x, center_y):
-        self.center_x = center_x
-        self.center_y = center_y
+class Wall(arcade.Sprite):
+    def __init__(self, grid_x, grid_y):
+        super().__init__()
+        self.texture = arcade.make_soft_square_texture(TILE_SIZE,arcade.color.BLUE,outer_alpha=255)
+        self.center_x = grid_x * TILE_SIZE + TILE_SIZE / 2
+        self.center_y = grid_y * TILE_SIZE + TILE_SIZE / 2
 
 
 
