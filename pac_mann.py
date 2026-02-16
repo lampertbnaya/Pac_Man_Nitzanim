@@ -1,4 +1,5 @@
 import random
+import arcade
 
 class Coin:
     def __init__(self,center_x,center_y):
