@@ -1,15 +1,25 @@
 import random
 import arcade
+from arcade.examples.drawing_primitives import texture
+from pymunk.examples.colors import color
 
-class Coin:
+TILE_SIZE = 32
+
+class Coin(arcade.Sprite):
     def __init__(self,center_x,center_y):
         self.center_x = center_x
         self.center_y = center_y
         self.value = 10
 
 
-class Character:
+class Character(arcade.Sprite):
     def __init__(self,center_x,center_y,speed):
+        super().__init__(self,speed,center_x,center_y,color)
+        radius = TILE_SIZE //2 - 2
+        texture = arcade.make_circle_texture(radius * 2,color)
+        self.texture = texture
+        self.width = texture.width - 9
+        self.height = texture.height - 9
         self.center_x = center_x
         self.center_y = center_y
         self.speed = speed
