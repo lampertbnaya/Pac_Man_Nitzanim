@@ -6,7 +6,7 @@ from pymunk.examples.colors import color
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Pac-Man (Arcade)"#eladhor
+SCREEN_TITLE = "Pac-Man (Arcade)"#elad
 
 TILE_SIZE = 32
 MOVE_COOLDOWN = 0.16
