@@ -14,14 +14,17 @@ MOVE_COOLDOWN = 0.16
 
 class Coin(arcade.Sprite):
     def __init__(self,center_x,center_y):
+        super().__init__(center_x,center_y)
+        tex = arcade.make_circle_texture(TILE_SIZE//8, arcade.color.YELLOW)
+        self.texture = tex
         self.center_x = center_x
         self.center_y = center_y
         self.value = 10
 
 
 class Character(arcade.Sprite):
-    def __init__(self,center_x,center_y,speed):
-        super().__init__(self,speed,center_x,center_y,color)
+    def __init__(self,center_x,center_y,speed,color):
+        super().__init__(self,center_x,center_y)
         radius = TILE_SIZE //2 - 2
         texture = arcade.make_circle_texture(radius * 2,color)
         self.texture = texture
