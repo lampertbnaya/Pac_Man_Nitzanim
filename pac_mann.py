@@ -38,19 +38,15 @@ class Character(arcade.Sprite):
 
 
 class Player(Character):
-    def __init__(self,center_x,center_y,speed):
-        super().__init__(center_x,center_y,speed)
+    def __init__(self, center_x, center_y, speed):
+        super().__init__(center_x, center_y, speed, arcade.color.YELLOW)
         self.score = 0
         self.lives = 3
-
-    def move(self):
-        self.center_x += self.change_x*self.speed
-        self.center_y += self.change_y*self.speed
 
 
 class Enemy(Character):
     def __init__(self,center_x,center_y,speed):
-        super().__init__(center_x,center_y,speed)
+        super().__init__(center_x,center_y,speed,arcade.color.RED)
         self.time_to_change_direction = 0
 
     def pick_new_direction(self):

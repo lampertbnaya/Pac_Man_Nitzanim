@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddda82d8-496e-4f83-9819-d40e472a22fd" name="Changes" comment="Logic part">
+    <list default="true" id="ddda82d8-496e-4f83-9819-d40e472a22fd" name="Changes" comment="with coin class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pac_mann.py" beforeDir="false" afterPath="$PROJECT_DIR$/pac_mann.py" afterDir="false" />
     </list>
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1771258994121</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="with coin class">
+      <option name="closed" value="true" />
+      <created>1771863353314</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1771863353314</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="בניה" />
     <MESSAGE value="Logic part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Logic part" />
+    <MESSAGE value="with coin class" />
+    <option name="LAST_COMMIT_MESSAGE" value="with coin class" />
   </component>
 </project>
