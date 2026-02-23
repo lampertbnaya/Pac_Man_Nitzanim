@@ -10,7 +10,7 @@ SCREEN_TITLE = "Pac-Man (Arcade)"#elad
 
 TILE_SIZE = 32
 MOVE_COOLDOWN = 0.16
-#kn
+
 
 class Coin(arcade.Sprite):
     def __init__(self,center_x,center_y):
